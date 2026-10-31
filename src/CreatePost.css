@@ -1,0 +1,128 @@
+.create-post {
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 15px 25px;
+  background-color: white;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  color: #222;
+}
+
+.create-post .heading {
+  background-color: #e1e1e1;
+  padding: 5px;
+  margin: 10px 0;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.create-post form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.create-post label {
+  font-size: 12px;
+}
+
+.create-post .post-type {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin: 5px 0 12px;
+}
+
+.create-post .post-type label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.create-post input[type="radio"] {
+  margin: 0;
+  accent-color: #555;
+}
+
+.create-post input[type="text"],
+.create-post textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 7px;
+  border: 1px solid #888;
+  border-radius: 0;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  background-color: white;
+}
+
+.create-post input[type="text"] {
+  height: 30px;
+}
+
+.create-post textarea {
+  resize: vertical;
+}
+
+.create-post .description {
+  height: 155px;
+}
+
+.create-post .abstract {
+  height: 65px;
+}
+
+.create-post input[type="text"]:focus,
+.create-post textarea:focus {
+  outline: 1px solid #555;
+  border-color: #555;
+}
+
+.create-post .error-message {
+  color: #d00000;
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.create-post .button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+}
+
+.create-post button {
+  width: 120px;
+  padding: 8px;
+  border: none;
+  border-radius: 0;
+  background-color: #a5a5a5;
+  color: black;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.create-post button:hover {
+  background-color: #888;
+}
+
+.create-post button:focus {
+  outline: 2px solid #555;
+  outline-offset: 2px;
+}
+
+@media (max-width: 600px) {
+  .create-post {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .create-post .post-type {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .create-post .button-container button {
+    width: 100%;
+  }
+}
